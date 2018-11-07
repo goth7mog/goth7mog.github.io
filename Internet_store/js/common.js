@@ -1,18 +1,5 @@
 $(document).ready(function() {
 	
-//form 
-$("#form").submit(function() {
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: $(this).serialize()
-		}).done(function() {
-			$(this).find("input").val("");
-			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-			$("#form").trigger("reset");
-		});
-		return false;
-	});
 
 //Featured Collections pop-ups
 	$("div:nth-child(1)").click(function() {
@@ -167,6 +154,20 @@ $("#form").submit(function() {
 			setTimeout(function() {
 				$.fancybox.close();
 			}, 1000);
+		});
+		return false;
+	});
+
+	//form 
+$("#form").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#form").trigger("reset");
 		});
 		return false;
 	});
