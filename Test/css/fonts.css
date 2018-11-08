@@ -1,0 +1,20 @@
+/* font-family: "Montserrat-Regular"; */
+@font-face {
+	font-family: "Montserrat-Regular";
+	src: url("../fonts/Montserrat-Regular/Montserrat-Regular.eot");
+	src: url("../fonts/Montserrat-Regular/Montserrat-Regular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Montserrat-Regular/Montserrat-Regular.woff") format("woff"),
+	url("../fonts/Montserrat-Regular/Montserrat-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "Montserrat-Light"; */
+@font-face {
+	font-family: "Montserrat-Light";
+	src: url("../fonts/Montserrat-Light/Montserrat-Light.eot");
+	src: url("../fonts/Montserrat-Light/Montserrat-Light.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Montserrat-Light/Montserrat-Light.woff") format("woff"),
+	url("../fonts/Montserrat-Light/Montserrat-Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
