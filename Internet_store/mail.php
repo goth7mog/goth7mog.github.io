@@ -3,7 +3,7 @@
 $recepient = "goth7mog@mail";
 $sitename = "Internet_store";
 
-$mail = trim($_POST["mail"]);
+$mail = trim($_GET["mail"]);
 $message = "Почта клиента: $mail \nТелефон";
 
 $pagetitle = "Новая заявка с сайта \"$sitename\"";
