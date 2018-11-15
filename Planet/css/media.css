@@ -1,0 +1,112 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.left-menu {
+		padding-top: 20px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	.planet-wrapper img.ellips {
+		width: 285px;
+		height: 218px;
+	}
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+.middle-menu a.button {
+		display: inline-block;
+	}
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+	.content-wrapper h1 {
+		font-size: 50px;
+	}
+	.lorem-wrapper-items {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+.left-menu {
+	float: left;
+	margin-right: 60px;
+}
+.planet-wrapper img.ellips {
+width: 372px;
+height: 285px;
+	}
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+	.planet-wrapper {
+		float: left;
+		margin-top: 20px;
+		margin-right: 62px;
+		margin-left: 10px;
+	}
+	nav {
+		display: none;
+	}
+	.left-menu {
+	margin-top: 20px;
+}
+.middle-menu .ul-2 {
+	display: inline-block;
+}
+	.planet-wrapper img.ellips {
+width: 403px;
+height: 309px;
+	}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.middle-menu {
+		margin-left: 150px;
+	}
+	.button-login {
+		position: absolute;
+    right: -90px;
+    top: 20px;
+	}
+	.content-wrapper h1 {
+		font-size: 62px;
+	}
+	
+}

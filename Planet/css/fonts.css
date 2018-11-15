@@ -1,0 +1,57 @@
+
+/* ClearSans-Bold*/
+@font-face {
+    font-family: 'Clear_sansbold';
+    src: url('../fonts/ClearSans-Bold-webfont/ClearSans-Bold-webfont.eot');
+    src: url('../fonts/ClearSans-Bold-webfont/ClearSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ClearSans-Bold-webfont/ClearSans-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/ClearSans-Bold-webfont/ClearSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/ClearSans-Bold-webfont/ClearSans-Bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*robotoblack*/
+@font-face {
+    font-family: 'Robotoblack';
+    src: url('../fonts/Roboto-Black-webfont/Roboto-Black-webfont.eot');
+    src: url('../fonts/Roboto-Black-webfont/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Black-webfont/Roboto-Black-webfont.woff2') format('woff2'),
+         url('../fonts/Roboto-Black-webfont/Roboto-Black-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Black-webfont/Roboto-Black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*robotobold*/
+@font-face {
+    font-family: 'Robotobold';
+    src: url('../fonts/Roboto-Bold-webfont/Roboto-Bold-webfont.eot');
+    src: url('../fonts/Roboto-Bold-webfont/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Bold-webfont/Roboto-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/Roboto-Bold-webfont/Roboto-Bold-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Bold-webfont/Roboto-Bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*robotolight*/
+
+@font-face {
+    font-family: 'Robotolight';
+    src: url('../fonts/Roboto-Light-webfont/Roboto-Light-webfont.eot');
+    src: url('../fonts/Roboto-Light-webfont/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Light-webfont/Roboto-Light-webfont.woff2') format('woff2'),
+         url('../fonts/Roboto-Light-webfont/Roboto-Light-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Light-webfont/Roboto-Light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
