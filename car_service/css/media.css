@@ -21,6 +21,9 @@
 		font-size: 20px;
 		line-height: 1.5em;
 	}
+	.top_addr {
+		padding-top: 10px;
+	}
 	.logo-wrap img {
 		width: 125px;
 	}
