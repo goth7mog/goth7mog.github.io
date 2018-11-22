@@ -78,6 +78,7 @@ header a {
   background-repeat: no-repeat;
   background-position: top left;
   line-height: 26px;
+  white-space: nowrap;
 }
 .top_addr strong {
 	font-size: 32px;
@@ -89,6 +90,8 @@ header a {
 .top-line .logo {
 	border-bottom: none;
 	position: absolute;
+	left: 0;
+	right: 0;
 }
 .top-line .logo:hover {
 	border-bottom: none;
@@ -151,22 +154,22 @@ header .st_button {
 }
 
 /* Navigation */
+.clearfix { clear: both; }
+
 .top_mnu {
-	height: 68px;
+	min-height: 68px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	background-color: #242424;
 	border-left: none;
 	border-right: none;
 	font-family: "BebasRegular";
 	text-transform: uppercase;
-	overflow: hidden;  
 	} 
 .top_mnu ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	font-size: 0;
-	float: left;
 }
 .top_mnu a {
 	color: #fff;
@@ -179,6 +182,15 @@ header .st_button {
 	background-image: url(../img/top_mnu_iconset.png);
 	background-repeat: no-repeat;
 	background-position: 18px 21px;
+}
+.top_mnu .bars {
+	color: #fff;
+	background-color: transparent;
+	position: relative;
+	left: 45%;
+	font-size: 25px;
+	margin: 10px;
+	display: none;
 }
 .top_mnu li {
 	display: inline-block;
@@ -205,7 +217,8 @@ header .st_button {
 .top_mnu li:nth-child(6) a {
 	background-position-x: -717px;
 }
-.top_mnu .warranty {
+
+.top_mnu .warranty, header .warranty {
 	display: inline-block;
 	height: 48px;
 	width: 174px;
@@ -218,6 +231,11 @@ header .st_button {
 	color: #fff;
 	text-shadow: 0 0 0 #e6c7c4;
 }
+header .warranty {
+	margin: 5px;
+	vertical-align: top;
+}
+
 .w_left {
 	display: inline-block;
 	font-size: 20px;
@@ -307,10 +325,9 @@ section h2,
 	width: 162px;
 	display: inline-block;	
 	text-align: center;
+	margin-bottom: 30px;
 }
-.mc_item_wrap:first-child {
-	margin-left: 0;
-}
+
 .mc_item_wrap a {
 	color: #fff;
 }
@@ -446,6 +463,7 @@ font-size: 14px;
 color: #050505;
 text-align: center;
 margin-bottom: 40px;
+overflow: hidden;
 }
 .hi_item p {
 	margin-top: 21px;
@@ -486,7 +504,7 @@ text-align: left;
 font-weight: bold;
 }
 .s_bottom .sb_content_right {
-	width: 700px;
+	max-width: 700px;
 }
 
 
@@ -494,7 +512,7 @@ font-weight: bold;
 
 footer {
 	background-color:  #2a2a2a;
-	height: 96px;
+	min-height: 96px;
 	font-family: "BebasRegular";
 	font-size: 20px;
 	text-align: left;

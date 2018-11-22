@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	
+$(".bars").click(function(){
+	 		$(this).next().slideToggle();
+	 });
 
 	$(".mc_item_wrap .mc_pop_up").each(function() {
 		$(this).after("<div class='mc_item_wrap_af'></div");
