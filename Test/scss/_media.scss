@@ -1,0 +1,59 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	footer .contacts-menu {
+		text-align: center;
+	}
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+	
+	
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+	footer .contacts-menu .inp {
+		width: 290px;
+	}
+	footer #form {
+		width: 290px;
+	}
+	header .banner-menu {
+		text-align: center;
+	}
+	
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
