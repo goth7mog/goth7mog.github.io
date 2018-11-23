@@ -22,33 +22,6 @@ $(document).ready(function() {
    $("#ssn").mask("999-99-9999");
 });
 
-//Featured Collections pop-ups
-	$("div:nth-child(1)").click(function() {
-		$(this).parent().siblings().children("img").hide();
-		$(this).parent().siblings().children("img:nth-child(1)").show();
-	});
-	$("div:nth-child(2)").click(function() {
-		$(this).parent().siblings().children("img").hide();
-		$(this).parent().siblings().children("img:nth-child(2)").show();
-	});
-	$("div:nth-child(3)").click(function() {
-		$(this).parent().siblings().children("img").hide();
-		$(this).parent().siblings().children("img:nth-child(3)").show();
-	});
-
-//Base-menu Slider
-	$(".mc_toggle_1").click(function() {
-		$(this).parent().parent().children().children("a").slideUp();
-		$(this).parent().parent().children().children(".banner_1").slideDown();
-	});
-	$(".mc_toggle_2").click(function() {
-		$(this).parent().parent().children().children("a").slideUp();
-		$(this).parent().parent().children().children(".banner_2").slideDown();
-	});
-	$(".mc_toggle_3").click(function() {
-		$(this).parent().parent().children().children("a").slideUp();
-		$(this).parent().parent().children().children(".banner_3").slideDown();
-	});
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
