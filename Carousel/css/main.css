@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+body {
+	font-family: "Arial MT", sans-serif;
+	font-size: 16px;
+	min-height: 5000px;
+}
+.next_button, .prev_button{
+	font-size: 6vh;
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	cursor: pointer;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.next_button {
+	right: 10px;
+}
+.prev_button {
+	left: 10px;
+}
+.slider-container img {
+	
+	max-width: 100%;
+}
+.slider-container {
+	position: relative;
+}

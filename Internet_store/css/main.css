@@ -266,7 +266,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-size: 24px;
-	display: inline-block;
+	float: left;
 }
 .featured-collections .collect-caption {
 	background-color: #fff;
@@ -276,15 +276,11 @@ body {
 	color: #202326;
 	font-family: "Montserrat-Light", sans-serif;
 	line-height: 70px;
-	height: 70px;
 	font-weight: bold;
-	position: relative;
+	overflow: hidden;
 }
 .collect-caption a {
-	font-size: 13px;
-	vertical-align: top;
-	position: absolute;
-	right: 30px;
+	float: right;
 }
 .featured-collections .item-wrapper {
 	width: 100%;

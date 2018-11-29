@@ -326,8 +326,9 @@ line-height: 29px;
 	background-color: #8e8e8e;
 	opacity: 0.37;
 	z-index: 10;
-	animation: fadeIn 5s;
   -webkit-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  animation: fadeIn 5s;
 }
 @keyframes fadeIn {
     from { opacity: 0; }
