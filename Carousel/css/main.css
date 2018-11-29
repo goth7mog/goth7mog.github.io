@@ -32,7 +32,7 @@ body {
 	min-height: 5000px;
 }
 .next_button, .prev_button{
-	font-size: 6vh;
+	font-size: 6vw;
 	position: absolute;
 	z-index: 10;
 	top: 50%;
