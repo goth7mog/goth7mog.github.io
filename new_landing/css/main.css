@@ -180,7 +180,8 @@ svg path {
   z-index: 50;
   right: 0;
   top: 0;
-  display: none; }
+  display: none;
+  display: flex; }
   .top_mnu ul,
   .top_mnu li {
     list-style-type: none;
@@ -203,8 +204,10 @@ svg path {
       -webkit-animation-duration: 2s;
       animation-duration: 2s; }
   .top_mnu ul {
-    margin-top: 180px;
-    text-align: center; }
+    margin: auto;
+    text-align: center; 
+    width: 100%;
+  }
     .top_mnu ul a {
       color: #fff;
       display: block;
