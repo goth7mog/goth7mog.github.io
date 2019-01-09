@@ -180,8 +180,7 @@ svg path {
   z-index: 50;
   right: 0;
   top: 0;
-  display: none;
-  display: flex; }
+  display: none; }
   .top_mnu ul,
   .top_mnu li {
     list-style-type: none;
@@ -204,7 +203,9 @@ svg path {
       -webkit-animation-duration: 2s;
       animation-duration: 2s; }
   .top_mnu ul {
-    margin: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     text-align: center; 
     width: 100%;
   }
