@@ -101,11 +101,11 @@ $(document).ready(function() {
 	function carousel_1() {
 		var owl = $(".carousel");
 		owl.owlCarousel({
-			items : 1,
-			loop : true,
-			autoHeight : true,
-			dots : true,
-			singleItem : true
+			items : 4,
+			autoHeight : true
+			// loop : true,
+			// dots : true,
+			// singleItem : true
 		});
 		owl.on("mousewheel", ".owl-wrapper", function (e) {
 			if (e.deltaY > 0) {

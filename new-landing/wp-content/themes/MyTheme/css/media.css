@@ -1,0 +1,87 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.top_wrapper .top_text h1 {
+		padding: 10px 30px;
+	}
+
+	.s_resume .section_content .left,
+	.s_resume .section_content .left h3 {
+		text-align: left;
+		border-right: none;
+	}
+	.s_resume .section_content .left {
+		margin-bottom: 60px;
+	}
+	.s_resume .section_content h3,
+	.s_resume .section_content .resume_icon {
+		margin-bottom: 10px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.top_wrapper .top_text h1 {
+		font-size: 2em;
+		border: none;
+	}
+	.main_footer .social_wrap {
+		float: none;
+		text-align: center;
+	}
+	.main_footer .social_wrap ul {
+		padding: 0;
+	}
+	.main_footer .copyright_info {
+		margin: 20px 0;
+		text-align: center;
+		float: none;
+	}
+	.portfolio_item .port_item_cont {
+		font-size: 9px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

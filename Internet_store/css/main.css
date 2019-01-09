@@ -368,35 +368,34 @@ body {
   color: #202326;
   font-family: "Montserrat-Light", sans-serif;
   line-height: 70px;
-  height: 70px;
+  min-height: 70px;
   font-weight: bold;
-  position: relative;
+  overflow: hidden;
 }
 .deals-caption .buttons {
-	display: inline-block;
-	position: absolute;
-	right: 30px;
+	float: right;
 }
-.deals-caption .button1, .button2 {
-	width: 33px;
-	height: 33px;
-	background-color: #62bf43;
-	display: inline-block;
-	vertical-align: middle;
-	background-image: url(../img/arrows_deals.png);
-	background-repeat: no-repeat;
-	background-position: 10px 7px;
+.buttons .prev_button, .next_button {
+		border: none;
+    background-color: #62bf43;
+    font-size: 32px;
+    padding: 0 10px;
+    line-height: 40px;
+    color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
 }
-.deals-caption .button2 {
-	background-position: -26px 7px;
-}
+
 .deals-caption a {
 	font-size: 13px;
 	vertical-align: top;
 	margin-right: 10px;
 }
-.deals-caption .button1:active, .button2:active {
+.deals-caption .prev_button:active, .next_button:active {
 	background-color: #42ce60;
+	-webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-o-transform: scale(0.9);
 	transform: scale(0.9);
 }
 
@@ -413,7 +412,10 @@ body {
 .stuff-wrapper .stuff-picture {
 	display: inline-block;
 	width: 100%;
-}           
+}     
+.stuff-picture img {
+	max-height: 130px;
+}      
 .stuff-wrapper .stuff-caption {
 	display: inline-block;
 	color: #202326;
@@ -490,6 +492,7 @@ body {
 	background-image: url(../img/icon-e-mail.png);
 	background-repeat: no-repeat;
 	background-position: 5% 50%;
+	margin-bottom: 15px;
 }
 .subscribe .button-bottom {
 	width: 160px;
@@ -502,6 +505,7 @@ body {
 	border-radius: 5px;
 	border: none;
 	margin-left: 10px;
+	margin-bottom: 15px;
 }
 
 /*Footer*/
@@ -512,6 +516,7 @@ footer {
 }
 footer .links-area {
 	padding-top: 30px;
+	padding-left: 10px;
 }
 .links-area section {
 	display: inline-block;
@@ -527,7 +532,7 @@ footer .links-area {
 	margin-right: 103px;
 }
 .links-area .link-4 {
-	margin-right: 75px;
+	margin-right: 65px;
 }
 .links-area section ul {
 	padding: 0;
@@ -566,9 +571,11 @@ footer .copyright-info {
 	font-family: "Montserrat-Light", sans-serif;
 	font-size: 12px;
 	line-height: 40px;
+	padding-left: 5px;
 }
 footer .social-networks {
 	text-align: right;
+	padding-right: 6px;
 }
 .social-networks a {
 	padding-left: 7px;

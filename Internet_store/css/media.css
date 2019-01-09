@@ -17,7 +17,16 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	
+.subscribe .inp-bottom {
+	width: 290px;
+}
+.social-networks h4 {
+	display: block;
+}
+.daily-deals .deals-caption {
+	text-align: center;
+}
 }
 
 /* Custom, iPhone Retina */
