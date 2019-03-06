@@ -444,6 +444,7 @@ svg path {
     border: 1px solid #ccc;
     margin-top: 5px;
     line-height: 40px;
+    min-height: 40px;
     text-indent: 12px;
     font-size: 12px;
     background-color: transparent; }
