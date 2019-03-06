@@ -160,6 +160,9 @@ b, strong {
 		background: url('../img/select_but.png') no-repeat center transparent;
 		border: none;
 		font-size: 0;
+		&:focus {
+			outline: none;
+		}
 	}
 }
 
