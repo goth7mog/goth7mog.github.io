@@ -1,0 +1,68 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	.content .header_title {
+		font-size: 20px;
+	}
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+	.content .s_form {
+		text-align: right;
+	}
+	.jselector {
+		display: inline-block;
+		width: 100px;
+		margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 24px;
+	}
+	.content .header_title {
+		line-height: 60px;
+	}
+	.content .header_container {
+		margin-bottom: 45px;
+		margin-top: 30px;
+	}
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+	.column_eth, .column_ltc, .column_btc {
+		width: 290px;
+	}
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}

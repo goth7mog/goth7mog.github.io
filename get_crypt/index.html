@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Cryptocurrency Exchange</title>
+	<meta name="description" content="Cryptocurrency Exchange">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- For browsers compatibility -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!-- Display that site will be adaptive -->
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg"> <!--THis parametr is used for posting images from main site to social networks -->
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000"> <!--Title color in mobile browsers -->
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+
+	
+	<div class="container">
+		<section class="content">
+			<div class="header_container">
+				<div class="row">
+					<div class="col-md-8">
+						<h1 class="header_title">Select Currency to Exchange:</h1>
+					</div>
+					<div class="col-md-4">
+						<div class="s_form">
+							<!-- <i class="fa fa-angle-down"></i> -->
+							<select class="s_select" name="select_cur">
+								<option value="USD">USD</option>
+								<option value="EUR">EUR</option>
+								<option value="RUB">RUB</option>
+								<option value="GBP">GBP</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--         Columns      -->
+			<div class="row justify-content-center">
+				
+
+				<div class="col-12 col-md-6 col-lg-4 text-center">
+					<div class="column_eth text-center">
+						<div class="shadow"></div>
+
+						<h2>Ethereum</h2>
+						<div class="eth_img">
+							<img class="eth_img_abs" src="img/eth_img.png" alt="eth_img">
+						</div>
+
+						<div class="space_bet ">
+							<h3>Price </h3><span id="price"><span>
+						</div>
+					
+						<div class="space_bet">
+							<p>Percent change</p>
+							<label><input type="checkbox" name="switch" checked><i></i></label>
+						</div>
+					
+						<div class="space_bet">
+							<div class="p_text">Hour change: </div><span id="hour"></span>
+						</div>
+						<div class="space_bet">
+							<div class="p_text">Day change: </div><span id="day"></span>
+						</div>
+						<div class="space_bet">
+							<div class="p_text">Week change: </div><span id="week"></span>
+						</div>
+						<div class="space_bet">
+							<div class="p_text">Month change: </div><span id="month"></span>
+						</div>
+						
+					</div>
+				</div>
+
+
+				<div class="col-12 col-md-6 col-lg-4 text-center">
+					<div class="column_ltc text-center">
+						<div class="shadow"></div>
+
+						<h2>Litcoin</h2>
+						<div class="ltc_img">
+							<img  src="img/ltc_img.png" alt="ltc_img">
+						</div>
+
+						<div class="space_bet ">
+							<h3>Price </h3><span id="price1"><span>
+						</div>
+								
+						<div class="space_bet">
+							<p>Percent change</p>
+							<label><input type="checkbox" name="switch1" checked><i></i></label>
+						</div>
+						<div class="space_bet">
+							<div class="p_text">Hour change: </div><span id="hour1"></span>
+						</div>
+						<div class="space_bet">
+							<div class="p_text">Day change: </div><span id="day1"></span>
+						</div>
+						<div class="space_bet">
+							<div class="p_text">Week change: </div><span id="week1"></span>
+						</div>
+						<div class="space_bet">
+							<div class="p_text">Month change: </div><span id="month1"></span>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="col-12 col-md-6 col-lg-4 text-center">
+					<div class="column_btc text-center">
+						<div class="shadow"></div>
+
+						<h2>Bitcoin</h2>
+						<div class="btc_img">
+							<img class="btc_img_abs" src="img/btc_img.png" alt="btc_img">
+						</div>
+
+						<div class="space_bet ">
+							<h3>Price </h3><span id="price2"><span>
+							</div>
+
+							<div class="space_bet">
+								<p>Percent change</p>
+								<label><input type="checkbox" name="switch2" checked><i></i></label>
+							</div>
+
+							<div class="space_bet">
+								<div class="p_text">Hour change: </div><span id="hour2"></span>
+							</div>
+							<div class="space_bet">
+								<div class="p_text">Day change: </div><span id="day2"></span>
+							</div>
+							<div class="space_bet">
+								<div class="p_text">Week change: </div><span id="week2"></span>
+							</div>
+							<div class="space_bet">
+								<div class="p_text">Month change: </div><span id="month2"></span>
+							</div>
+
+						</div>
+					</div>
+			</div>
+		</section>
+	</div>
+
+
+	<!-- Main content -->
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
