@@ -270,7 +270,7 @@ b, strong {
 		display: none;
 		&:checked + i {
 			background-color: #3eb5f1;
-			&:after{
+			&:after {
 				left: 0;
 			}
 		}

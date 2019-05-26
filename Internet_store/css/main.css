@@ -215,16 +215,18 @@ body {
 	top: 0;
 	display: block;
 }
-.ban_back_scope .banner_1 {
+.ban_back_scope .banner_0 {
 	z-index: 1000;
 }
-.ban_back_scope .banner_2 {
+.ban_back_scope .banner_1 {
 	z-index: 999;
 }
-.ban_back_scope .banner_3 {
+.ban_back_scope .banner_2 {
 	z-index: 998;
 }
 .ban_back ul {
+	display: flex;
+	/*justify-content: space-around;*/
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -235,11 +237,14 @@ body {
 	font-weight: bold;
 }
 .ban_back li {
-	display: inline-block;
+	display: block;
+	text-align: center;
+	/*width: 100%;*/
+	flex-grow: 1;
 	cursor: pointer;
 	line-height: 64px;
-	padding-left: 32px;
-	padding-right: 32px;
+/*	padding-left: 31px;
+	padding-right: 31px;*/
 }
 .ban_back li:hover {
 	box-shadow: inset 0 -3px 0 #86b817;
@@ -315,14 +320,29 @@ body {
 	bottom: 0;
 	right: 0;
 	margin: auto;
+	display: inline-block !important;
 }
-.item-picture .small-pic {
+.item-picture .small_pic {
 	width: 350px;
 	height: 114px;
 	display: inline-block;
 	
 }
-.item-picture .small-pic .fotic2, .fotic1, .fotic3 {
+.item-picture .small_pic img {
+	height: auto;
+  width: 100%;
+  display: inline-block !important;
+}
+.item-picture .pic_moto img {
+	height: 100%;
+	width: auto;
+	position: absolute;
+  left: -25%;
+  top: 0;
+}
+.item-picture .small_pic div {
+	position: relative;
+	overflow: hidden;
 	border: none;
 	display: inline-block;
 	height: 114px;
@@ -330,7 +350,7 @@ body {
 	line-height: 114px;
 	cursor: pointer;
 }
-.item-picture .small-pic .fotic2 {
+.item-picture .small_pic .fotic2 {
 	border-left: 2px solid #dde2e6;
 	border-right: 2px solid #dde2e6;
 }
@@ -426,8 +446,9 @@ body {
 .stuff-caption .stuff-price {
 	font-size: 14px;
 }
-.stuff-price a {
+.stuff-caption a {
 	text-decoration: none;
+	font-size: 16px;
 	color: #202326;
 }
 .stuff-caption .price-line-through {
@@ -450,30 +471,28 @@ body {
 	line-height: 20px;
 	text-transform: uppercase;
 }
-.daily-deals .radio-buttons-wrapper {
+.owl-controls {
 	text-align: center;
 	line-height: 47px;
 	background-color: #fff;
 	border: 1px solid #dde2e6;
 	margin-bottom: 37px;
 }
-.radio-buttons-wrapper .radio input {
-	display: none;
-}
-.radio-buttons-wrapper .radio {
+.owl-controls .owl-page {
+	display: inline-block;
 	margin-left: 5px;
 }
-.radio-buttons-wrapper .radio span {
-  position: relative; 
-  display: inline-block; 
-	width: 9px;
-	height: 9px;
-	border: 2px solid #a3a9ad;
-	background-color: #fff;
-	border-radius: 50%
+.owl-controls .owl-page span {
+	  position: relative; 
+	  display: inline-block; 
+		width: 9px;
+		height: 9px;
+		border: 2px solid #a3a9ad;
+		background-color: #fff;
+		border-radius: 50%
 }
-.radio-buttons-wrapper .radio input:checked + span { 
-  background-color: #6e747a;
+.owl-controls .active span {
+	background-color: #6e747a;
   border: none;
 }
 .subscribe {

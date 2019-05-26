@@ -1,33 +1,49 @@
 $(document).ready(function() {
-	
+
+// Base-menu Slider
+(function() {
+	var buttons = document.querySelectorAll('.ban_back ul li');
+	for (var num = 0; num < buttons.length; num++ ) {
+		var toggle = buttons[num];
+		toggle.classList.add("mc_toogle_" + num);
+		$(toggle).click((function(numX){
+			return function() {
+				$(this).parent().parent().children().children("a").slideUp();
+				$(this).parent().parent().children().children(".banner_" + numX).slideDown();
+		};
+		}(num)));
+	}
+}());
+
+
 
 //Featured Collections pop-ups
-	$("div:nth-child(1)").click(function() {
-		$(this).parent().siblings().children("img").hide();
-		$(this).parent().siblings().children("img:nth-child(1)").show();
-	});
-	$("div:nth-child(2)").click(function() {
-		$(this).parent().siblings().children("img").hide();
-		$(this).parent().siblings().children("img:nth-child(2)").show();
-	});
-	$("div:nth-child(3)").click(function() {
-		$(this).parent().siblings().children("img").hide();
-		$(this).parent().siblings().children("img:nth-child(3)").show();
-	});
 
-//Base-menu Slider
-	$(".mc_toggle_1").click(function() {
-		$(this).parent().parent().children().children("a").slideUp();
-		$(this).parent().parent().children().children(".banner_1").slideDown();
-	});
-	$(".mc_toggle_2").click(function() {
-		$(this).parent().parent().children().children("a").slideUp();
-		$(this).parent().parent().children().children(".banner_2").slideDown();
-	});
-	$(".mc_toggle_3").click(function() {
-		$(this).parent().parent().children().children("a").slideUp();
-		$(this).parent().parent().children().children(".banner_3").slideDown();
-	});
+// (function() {
+// 	var cuttons = document.querySelectorAll('.small_pic div');
+// 	var pics = document.querySelectorAll('.big-pic :nth-last-child(n+2)');
+// 	  for (var i = 0; i < cuttons.length; i++) {
+// 	  	var cutt = cuttons[i];
+// 	  	var pic = pics[i];
+// 	  	$(cutt).click((function(picX) {
+// 	  		return function() {
+// 		  		$(this).parent().siblings().children("img").hide();
+// 		  		$(picX).show();
+// 	   		};
+// 	  	}(pic)));
+// 	 	}
+// }());
+
+$('.small_pic div').on('click', '.small_pic div img', function(){
+	// console.log($(this));
+	var main = $(this).parent().parent().prev();
+	main.children().appendTo($(this).parent());
+	$(this).appendTo(main);
+});
+
+	//Current year
+	$('#year').text((new Date()).getFullYear());
+
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
@@ -96,15 +112,17 @@ $(document).ready(function() {
 		});
 	};
 
-	//Каруселька
+	//Каруселька 
 	//Документация: http://owlgraphic.com/owlcarousel/
+
 	function carousel_1() {
 		var owl = $(".carousel");
+
 		owl.owlCarousel({
 			items : 4,
-			autoHeight : true
+			autoHeight : true,
 			// loop : true,
-			// dots : true,
+			dots : true
 			// singleItem : true
 		});
 		owl.on("mousewheel", ".owl-wrapper", function (e) {
@@ -115,12 +133,11 @@ $(document).ready(function() {
 			}
 			e.preventDefault();
 		});
-		$(".next_button").click(function() {
-			owl.trigger("owl.next");
-		});
-		$(".prev_button").click(function() {
-			owl.trigger("owl.prev");
-		});
+
+		$(".next_button").click(function() { owl.trigger("owl.next"); });
+		$(".prev_button").click(function() { owl.trigger("owl.prev"); });
+
+
 		owl.on("resized.owl.carousel", function(event) {
 			var $this = $(this);
 			$this.find(".owl-height").css("height", $this.find(".owl-item.active").height());

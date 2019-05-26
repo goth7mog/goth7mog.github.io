@@ -1,5 +1,3 @@
-// P.S. Using global variables, I might not repeat the code for each column, but it's bad practise//
-
 "use strict";
 $(document).ready(function(){
 	//----------Jselector-----//
@@ -26,7 +24,7 @@ function getRate() {
 
 //----------------Ethereum------------------//
 function getRateEth() {
-	var hour, day, week, month, symbol, changeNotation, currency, symbolCur;
+	let hour, day, week, month, symbol, changeNotation, currency, symbolCur;
 		
 		// Currency selector //
 		switch ($('select[name="select_cur"]').val()) {
@@ -88,7 +86,7 @@ function getRateEth() {
 
 //--------------------Litecoin-------------------------//
 function getRateLtc() {
-	var hour, day, week, month, symbol, changeNotation, currency, symbolCur;
+	let hour, day, week, month, symbol, changeNotation, currency, symbolCur;
 		// Currency selector //
 		switch ($('select[name="select_cur"]').val()) {
 		case "USD":
@@ -149,7 +147,7 @@ function getRateLtc() {
 
 //--------------------Bitcoin-------------------------//
 function getRateBtc() {
-	var hour, day, week, month, symbol, changeNotation, currency, symbolCur;
+	let hour, day, week, month, symbol, changeNotation, currency, symbolCur;
 		// Currency selector //
 		switch ($('select[name="select_cur"]').val()) {
 		case "USD":
@@ -207,5 +205,6 @@ function getRateBtc() {
 		}
 	);
 }
+
 
 
